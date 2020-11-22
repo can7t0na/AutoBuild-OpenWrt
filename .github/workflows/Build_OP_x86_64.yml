@@ -11,9 +11,9 @@ on:
   release:
     types: [published]
 
-  push:
-    branches: 
-      - master
+  #push:
+    #branches: 
+      #- master
 
   #schedule:
   #  - cron: 0 8 * * 5
@@ -79,6 +79,7 @@ jobs:
         git clone https://github.com/xiaorouji/openwrt-package.git package/lienol
         git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/jd
         git clone https://github.com/tty228/luci-app-serverchan.git package/tty
+        git clone https://github.com/vernesong/OpenClash.git package/vernesong
     #    git clone "your_github_link" package/"your_folder_name"      
 
     - name: Configuration Customization - Build_x86_64
